@@ -1,29 +1,39 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 200px 0;
+  position: relative;
 
   font-family: 'Fjalla One', sans-serif;
 }
 
-.scotland {
-  min-height: 100vh;
-  padding: 10px 10px 30px 10px;
-
-  background: url("/images/scotland.jpg") no-repeat center center fixed;
-  background-size: cover;
-
-  color: white;
-
-  text-align: center;
+a, a:active, a:hover, a:visited {
+  color: inherit;
 }
 
-.flex-container {
+.container {
   display: -webkit-flex;
   display:         flex;
+}
+
+.container-center {
   -webkit-align-items: center;
           align-items: center;
   -webkit-justify-content: center;
           justify-content: center;
+}
+
+.scotland {
+  min-height: 100vh;
+
+  background: url("/images/scotland.jpg") no-repeat center center;
+  background-size: cover;
+
+  color: white;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 10px 30px 10px;
 }
 
 .page-header {
@@ -78,4 +88,46 @@ body {
 .scotland a {
   text-decoration: none;
   color: #fff;
+}
+
+.about {
+  width: 100%;
+}
+
+.about h2 {
+  background-color: rgba(69, 44, 73, 0.8);
+  border-bottom: 5px solid #452c49;
+  margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+}
+
+.about p {
+  padding: 10px;
+  margin: 0 auto;
+  width: 60%;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .about p {
+    padding: 5px;
+    width: 95%;
+
+    font-size: 14px;
+  }
+}
+
+.railscamp-yield {
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+  width: 100px;
+}
+
+.railscamp-yield:hover {
+  transform: scale(1.2);
 }
