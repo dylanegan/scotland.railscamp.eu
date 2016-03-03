@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.scotland {
+  min-height: 100vh;
+  padding: 10px 10px 30px 10px;
+
+  background: url("/images/scotland.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  color: white;
+
+  text-align: center;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.page-header {
+  border-bottom: 5px solid #fff;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+
+  font-family: 'Marck Script', cursive;
+  font-size: 80px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+@media (max-width: 600px) {
+  .page-header {
+    font-size: 64px;
+    text-shadow: 1px 1px 1px #000;
+  }
+}
+
+.page-subheader {
+  margin-top: 2em;
+
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 0.6vw;
+  /*text-transform: uppercase;*/
+}
+
+@media (max-width: 600px) {
+  .page-subheader {
+    font-size: 36px;
+  }
+}
+
+.register-interest {
+  background-color: rgba(69, 44, 73, 0.8);
+  border: 1px solid #452c49;
+  padding: 10px;
+
+  font-size: 18px;
+  letter-spacing: 0.1vw;
+}
+
+@media (max-width: 600px) {
+  .register-interest {
+    padding: 5px;
+
+    font-size: 14px;
+  }
+}
+
+.scotland a {
+  text-decoration: none;
+  color: #fff;
+}
