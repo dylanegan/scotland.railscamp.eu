@@ -103,6 +103,7 @@ a, a:active, a:hover, a:visited {
   text-align: center;
   font-size: 48px;
   color: #fff;
+  letter-spacing: 0.1vw;
 }
 
 .about p {
