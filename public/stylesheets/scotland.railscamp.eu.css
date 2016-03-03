@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0 0 200px 0;
+  padding: 0 0 100px 0;
   position: relative;
 
   font-family: 'Fjalla One', sans-serif;
@@ -120,6 +120,14 @@ a, a:active, a:hover, a:visited {
 
     font-size: 14px;
   }
+}
+
+.social {
+  margin-top: 50px;
+}
+
+.social img {
+  width: 50px;
 }
 
 .railscamp-yield {
