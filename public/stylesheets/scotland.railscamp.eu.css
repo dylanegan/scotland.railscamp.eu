@@ -156,7 +156,7 @@ img.railscamp-yield {
   width: 100px;
 }
 
-img.railscamp-yield:hover {
+.social-links img:hover {
   transform: scale(1.2);
 }
 
