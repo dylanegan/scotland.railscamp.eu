@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  padding: 0 0 100px 0;
-  position: relative;
+  padding: 0;
 
   font-family: 'Fjalla One', sans-serif;
 }
@@ -126,17 +125,43 @@ a, a:active, a:hover, a:visited {
   margin-top: 50px;
 }
 
-.social img {
+.social-links {
+  padding: 10px;
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+}
+
+@media (max-width: 600px) {
+  .social-links {
+    padding: 5px;
+    width: 95%;
+  }
+}
+
+.social-links img {
   width: 50px;
 }
 
-.railscamp-yield {
+@media (max-width: 600px) {
+  .social-links img {
+    width: 30px;
+  }
+}
+
+img.railscamp-yield {
   position: absolute;
-  bottom: 10px;
-  right: 5%;
+  bottom: 0;
+  right: 15px;
   width: 100px;
 }
 
-.railscamp-yield:hover {
+img.railscamp-yield:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  img.railscamp-yield {
+    width: 50px;
+  }
 }
