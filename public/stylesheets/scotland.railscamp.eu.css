@@ -2,11 +2,16 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Fjalla One', sans-serif;
+  /*font-family: 'Fjalla One', sans-serif;*/
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a, a:active, a:hover, a:visited {
   color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 
 .container {
@@ -22,7 +27,7 @@ a, a:active, a:hover, a:visited {
 }
 
 .scotland {
-  min-height: 100vh;
+  min-height: 80vh;
 
   background: url("/images/scotland.jpg") no-repeat center center;
   background-size: cover;
@@ -38,7 +43,7 @@ a, a:active, a:hover, a:visited {
 .page-header {
   border-bottom: 5px solid #fff;
   margin-bottom: 0;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 
   font-family: 'Marck Script', cursive;
   font-size: 80px;
@@ -52,32 +57,49 @@ a, a:active, a:hover, a:visited {
   }
 }
 
-.page-subheader {
-  margin-top: 2em;
+.page-tagline {
+  margin-bottom: 3em;
+  margin-top: 0.2em;
 
-  font-size: 48px;
-  font-weight: normal;
-  letter-spacing: 0.6vw;
+  font-size: 28px;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .page-tagline {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.page-subheader {
+  font-size: 26px;
   /*text-transform: uppercase;*/
 }
 
 @media (max-width: 600px) {
   .page-subheader {
-    font-size: 36px;
+    font-size: 20px;
   }
 }
 
-.register-interest {
-  background-color: rgba(69, 44, 73, 0.8);
-  border: 1px solid #452c49;
-  padding: 10px;
+.register-interest a {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #fff; /*#452c49;*/
+  padding: 5px 10px;
 
   font-size: 18px;
+  font-weight: bold;
   letter-spacing: 0.1vw;
+  text-transform: uppercase;
+}
+
+.register-interest a, .register-interest a:visited {
+  color: #452c49;
 }
 
 @media (max-width: 600px) {
-  .register-interest {
+  .register-interest a {
     padding: 5px;
 
     font-size: 14px;
@@ -97,19 +119,34 @@ a, a:active, a:hover, a:visited {
   background-color: rgba(69, 44, 73, 0.8);
   border-bottom: 5px solid #452c49;
   margin-top: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-align: center;
-  font-size: 48px;
+  padding: 40px 0;
+
   color: #fff;
+  font-size: 48px;
   letter-spacing: 0.1vw;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .about h2 {
+    font-size: 36px;
+  }
+}
+
+.about h5 {
+  padding: 10px;
+  margin: 0 auto;
+  width: 60%;
+  font-size: 24px;
 }
 
 .about p {
   padding: 10px;
   margin: 0 auto;
   width: 60%;
+
   font-size: 20px;
+  font-weight: lighter;
 }
 
 @media (max-width: 600px) {
@@ -117,7 +154,14 @@ a, a:active, a:hover, a:visited {
     padding: 5px;
     width: 95%;
 
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .about h5 {
+    padding: 5px;
+    width: 95%;
+
+    font-size: 18px;
   }
 }
 
