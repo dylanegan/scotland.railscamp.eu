@@ -11,7 +11,7 @@ a {
 .scotland {
   background: url("/images/scotland.jpg") no-repeat center center;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 35vh;
   display: -webkit-flex;
   display:         flex;
   -webkit-align-items: center;
@@ -23,53 +23,32 @@ a {
 }
 
 .header {
-  padding: 10px 10px 30px 10px;
+  padding: 1em;
 }
 
 .page-header {
-  border-bottom: 2px solid #fdfdfe;
+  border-bottom: 1px solid #fdfdfe;
   padding-bottom: 5px;
   font-family: 'Marck Script', cursive;
-  font-size: 80px;
+  font-size: 40px;
   margin: 0;
 }
 
 .page-tagline {
   margin-bottom: 3em;
   margin-top: 0.5em;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: normal;
   letter-spacing: 0.03em;
 }
 
-@media (max-width: 600px) {
-  .page-header {
-    font-size: 64px;
-    text-shadow: 1px 1px 1px #000;
-  }
-  .page-tagline {
-    font-size: 24px;
-    text-align: center;
-  }
-}
-
-.page-subheader {
-  font-size: 26px;
-  /*text-transform: uppercase;*/
-}
-
-@media (max-width: 600px) {
-  .page-subheader {
-    font-size: 20px;
-  }
-}
-
 .register-interest a {
+  display: inline-block;
   border: 2px solid #fdfdfe;
   border-radius: 3px;
   padding: .5em 1em;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -81,17 +60,44 @@ a {
   background-color: rgba(255,255,255,0.2);
 }
 
-@media (max-width: 600px) {
+@media (min-width: 500px) {
+  .page-header {
+    font-size: 50px;
+  }
+  .page-tagline {
+    font-size: 24px;
+  }
   .register-interest a {
-    padding: 5px;
-    font-size: 14px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 700px) {
+  .scotland {
+    min-height: 45vh;
+  }
+  .page-header {
+    font-size: 70px;
+    border-bottom-width: 2px;
+  }
+  .page-tagline {
+    font-size: 28px;
+  }
+  .register-interest a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 900px) {
+  .scotland {
+    min-height: 55vh;
+  }
+  .page-header {
+    font-size: 80px;
   }
 }
 
 .about {
-  margin: 0 auto;
-  width: 60%;
-  padding: 10px;
+  margin: 2em auto 0;
+  width: 90%;
 }
 
 .about a {
@@ -106,11 +112,11 @@ a {
 
 .about h3 {
   color: #2a487c;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .about p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5em;
   font-weight: lighter;
   text-align: justify;
@@ -119,56 +125,39 @@ a {
   hyphens: auto;
 }
 
-@media (max-width: 600px) {
-  .about {
-    padding: 5px;
-    width: 95%;
-  }
-
+@media (min-width: 600px) {
   .about h3 {
-    font-size: 18px;
+    font-size: 24px;
   }
-
   .about p {
-    font-size: 16px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about, .social {
+    width: 70%;
+    max-width: 800px;
   }
 }
 
 .social {
-  margin: 2em 0;
-}
-
-.social-links {
-  padding: 10px;
+  margin: 3em auto 2em;
   position: relative;
-  margin: 0 auto;
-  width: 60%;
+  width: 90%;
 }
 
-.social-links img {
+.social img {
   width: 50px;
 }
-
-.social-links img:hover {
+.social img:hover {
   transform: scale(1.2);
 }
 
-img.railscamp-yield {
+.social .railscamp-yield {
+  float: right;
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100px;
-}
-
-@media (max-width: 600px) {
-  .social-links {
-    padding: 5px;
-    width: 95%;
-  }
-  .social-links img {
-    width: 30px;
-  }
-  img.railscamp-yield {
-    width: 50px;
-  }
+  width: 80px;
 }
