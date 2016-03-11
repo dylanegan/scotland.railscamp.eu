@@ -1,38 +1,24 @@
 body {
-  margin: 0;
-  padding: 0;
-
-  /*font-family: 'Fjalla One', sans-serif;*/
+  background: #fdfdfe;
+  color: #242f54;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-a, a:active, a:hover, a:visited {
-  color: inherit;
+a {
+  text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
-.container {
+.scotland {
+  background: url("/images/scotland.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 60vh;
   display: -webkit-flex;
   display:         flex;
-}
-
-.container-center {
   -webkit-align-items: center;
           align-items: center;
   -webkit-justify-content: center;
           justify-content: center;
-}
-
-.scotland {
-  min-height: 80vh;
-
-  background: url("/images/scotland.jpg") no-repeat center center;
-  background-size: cover;
-
-  color: white;
+  color: #fdfdfe;
   text-align: center;
 }
 
@@ -41,13 +27,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-header {
-  border-bottom: 5px solid #fff;
-  margin-bottom: 0;
+  border-bottom: 2px solid #fdfdfe;
   padding-bottom: 5px;
-
   font-family: 'Marck Script', cursive;
   font-size: 80px;
-  text-shadow: 2px 2px 2px #000;
+  margin: 0;
+}
+
+.page-tagline {
+  margin-bottom: 3em;
+  margin-top: 0.5em;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0.03em;
 }
 
 @media (max-width: 600px) {
@@ -55,17 +47,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 64px;
     text-shadow: 1px 1px 1px #000;
   }
-}
-
-.page-tagline {
-  margin-bottom: 3em;
-  margin-top: 0.2em;
-
-  font-size: 28px;
-  text-align: right;
-}
-
-@media (max-width: 600px) {
   .page-tagline {
     font-size: 24px;
     text-align: center;
@@ -84,89 +65,77 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .register-interest a {
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 2px solid #fff; /*#452c49;*/
-  padding: 5px 10px;
-
-  font-size: 18px;
+  border: 2px solid #fdfdfe;
+  border-radius: 3px;
+  padding: .5em 1em;
+  text-decoration: none;
+  font-size: 24px;
   font-weight: bold;
-  letter-spacing: 0.1vw;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
 }
-
-.register-interest a, .register-interest a:visited {
-  color: #452c49;
+.register-interest a:link, .register-interest a:visited {
+  color: #fdfdfe;
+}
+.register-interest a:active, .register-interest a:hover, .register-interest a:focus {
+  background-color: rgba(255,255,255,0.2);
 }
 
 @media (max-width: 600px) {
   .register-interest a {
     padding: 5px;
-
     font-size: 14px;
   }
 }
 
-.scotland a {
-  text-decoration: none;
-  color: #fff;
-}
-
 .about {
-  width: 100%;
-}
-
-.about h2 {
-  background-color: rgba(69, 44, 73, 0.8);
-  border-bottom: 5px solid #452c49;
-  margin-top: 0;
-  padding: 40px 0;
-
-  color: #fff;
-  font-size: 48px;
-  letter-spacing: 0.1vw;
-  text-align: center;
-}
-
-@media (max-width: 600px) {
-  .about h2 {
-    font-size: 36px;
-  }
-}
-
-.about h5 {
-  padding: 10px;
   margin: 0 auto;
   width: 60%;
+  padding: 10px;
+}
+
+.about a {
+  border-bottom: 1px solid currentColor;
+}
+.about a:link {
+  color: #2a487c;
+}
+.about a:visited, .about a:active, .about a:hover, .about a:focus {
+  color: inherit;
+}
+
+.about h3 {
+  color: #2a487c;
   font-size: 24px;
 }
 
 .about p {
-  padding: 10px;
-  margin: 0 auto;
-  width: 60%;
-
   font-size: 20px;
+  line-height: 1.5em;
   font-weight: lighter;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 @media (max-width: 600px) {
-  .about p {
+  .about {
     padding: 5px;
     width: 95%;
-
-    font-size: 16px;
   }
 
-  .about h5 {
-    padding: 5px;
-    width: 95%;
-
+  .about h3 {
     font-size: 18px;
+  }
+
+  .about p {
+    font-size: 16px;
   }
 }
 
 .social {
-  margin-top: 50px;
+  margin: 2em 0;
 }
 
 .social-links {
@@ -176,21 +145,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 60%;
 }
 
-@media (max-width: 600px) {
-  .social-links {
-    padding: 5px;
-    width: 95%;
-  }
-}
-
 .social-links img {
   width: 50px;
 }
 
-@media (max-width: 600px) {
-  .social-links img {
-    width: 30px;
-  }
+.social-links img:hover {
+  transform: scale(1.2);
 }
 
 img.railscamp-yield {
@@ -200,11 +160,14 @@ img.railscamp-yield {
   width: 100px;
 }
 
-.social-links img:hover {
-  transform: scale(1.2);
-}
-
 @media (max-width: 600px) {
+  .social-links {
+    padding: 5px;
+    width: 95%;
+  }
+  .social-links img {
+    width: 30px;
+  }
   img.railscamp-yield {
     width: 50px;
   }
