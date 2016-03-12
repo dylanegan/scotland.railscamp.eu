@@ -180,13 +180,13 @@ h2 {
 }
 
 .social {
-  margin: 3em auto 2em;
-  position: relative;
+  margin: 3em auto 3em;
   width: 90%;
 }
 
 .social img {
-  width: 50px;
+  width: 40px;
+  transition: transform .5s ease-out;
 }
 .social img:hover {
   transform: scale(1.2);
@@ -194,8 +194,6 @@ h2 {
 
 .social .railscamp-yield {
   float: right;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 80px;
+  width: 70px;
+  margin-top: -.7rem;
 }
