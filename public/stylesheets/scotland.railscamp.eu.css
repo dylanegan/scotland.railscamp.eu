@@ -8,6 +8,23 @@ a {
   text-decoration: none;
 }
 
+input:focus {
+  outline: none !important;
+}
+
+::-webkit-input-placeholder {
+  color: #242f54 !important;
+}
+:-moz-placeholder {
+  color: #242f54 !important;
+}
+::-moz-placeholder {
+  color: #242f54 !important;
+}
+:-ms-input-placeholder {
+  color: #242f54 !important;
+}
+
 .scotland {
   background: url("/images/scotland.jpg") no-repeat center center;
   background-size: cover;
@@ -176,6 +193,37 @@ h2 {
   }
   .about p {
     font-size: 1.3rem;
+  }
+}
+
+.register-interest-form input {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #2a487c;
+  color: #242f54 !important;
+  display: block;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 32px;
+  margin: 20px 0;
+  width: 400px;
+}
+
+.register-interest-form input.submit {
+  border: 2px solid #2a487c;
+  border-radius: .2rem;
+  font-weight: 600;
+  transition: background .5s;
+  width: 402px;
+}
+
+.register-interest-form input.submit:hover, .register-interest-form input.submit:focus {
+  background-color: rgba(31, 54, 106, .2);
+}
+
+@media (max-width: 600px) {
+  .register-interest-form input, .register-interest-form input.submit {
+    width: 100%;
   }
 }
 

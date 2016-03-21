@@ -16,8 +16,8 @@
       <div>
         <h1>Rails Camp Scotland</h1>
         <h2>A Different Kind of Conference</h2>
-        <a class="register-interest" href="https://ti.to/rails-camp-scotland/september-2016" title="Register your interest for Railscamp Scotland 2016">
-          Register Interest for September&nbsp;2016
+        <a class="register-interest" href="#register-interest" title="Register your interest for Railscamp Scotland 2016">
+          Register Interest for Autumn&nbsp;2016
         </a>
       </div>
     </div>
@@ -35,7 +35,7 @@
       <p>
         Regardless of your skills and background: we want you there.
         Who you are, what you do and what you bring to the event doesn’t even have to be about Rails or Ruby!
-        <a href="https://ti.to/rails-camp-scotland/september-2016">Register your interest</a> in Rails Camp Scotland now, and join us in September 2016.
+        <a href="#register-interest">Register your interest</a> in Rails Camp Scotland now, and join us in Autumn 2016.
       </p>
       <p>
         Rails Camp Scotland will be a conference that adheres to the <a href="http://confcodeofconduct.com/">Conference Code of Conduct</a>.
@@ -48,6 +48,12 @@
       <p>
         Rails Camp Scotland is put together by <a href="https://twitter.com/dylanegan">Dylan&nbsp;Egan</a> and <a href="https://twitter.com/dylanfm">Dylan&nbsp;Fogarty&ndash;MacDonald</a>.
       </p>
+      <h3>Register Interest</h3>
+      <form class="register-interest-form" id="register-interest">
+        <input id="register-name" type="text" placeholder="Name" autocomplete="off">
+        <input id="register-email" type="text" placeholder="Email" autocomplete="off">
+        <input class="submit" type="submit" value="Make It Happen!">
+      </form>
     </div>
     <div class="social">
       <a href="https://twitter.com/railscampeu" title="@railscampeu on Twitter">
@@ -58,4 +64,8 @@
       </a>
     </div>
   </body>
+
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+  <script src="/javascripts/register_interest.js"></script>
 </html>
