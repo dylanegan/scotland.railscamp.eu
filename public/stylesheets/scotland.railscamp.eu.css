@@ -199,6 +199,7 @@ h2 {
 input {
   background-color: #fff;
   border: none;
+  border-radius: 0;
   color: #242f54 !important;
   display: block;
   font-size: 1em;
