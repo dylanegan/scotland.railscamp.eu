@@ -196,34 +196,51 @@ h2 {
   }
 }
 
-.register-interest-form input {
+input {
   background-color: #fff;
   border: none;
-  border-bottom: 1px solid #2a487c;
   color: #242f54 !important;
   display: block;
-  font-size: 20px;
-  font-weight: lighter;
-  line-height: 32px;
-  margin: 20px 0;
-  width: 400px;
+  font-size: 1em;
+  width: 100%;
 }
 
-.register-interest-form input.submit {
+.input {
+  border-bottom: 1px solid #2a487c;
+  font-weight: lighter;
+  line-height: 2em;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.submit {
   border: 2px solid #2a487c;
   border-radius: .2rem;
   font-weight: 600;
+  line-height: 2em;
+  margin-top: 1.5rem;
   transition: background .5s;
-  width: 402px;
 }
 
-.register-interest-form input.submit:hover, .register-interest-form input.submit:focus {
+.submit:hover, .submit:focus {
   background-color: rgba(31, 54, 106, .2);
 }
 
-@media (max-width: 600px) {
-  .register-interest-form input, .register-interest-form input.submit {
-    width: 100%;
+@media (min-width: 500px) {
+  input {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 900px) {
+  input {
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 45%;
+  }
+}
+@media (min-width: 1000px) {
+  input {
+    font-size: 1.3rem;
   }
 }
 
