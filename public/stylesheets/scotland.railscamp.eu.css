@@ -1,6 +1,6 @@
 body {
-  background: #fdfdfe;
-  color: #242f54;
+  background-color: #e6eddf;
+  color: #273417;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -12,16 +12,7 @@ input:focus {
   outline: none !important;
 }
 
-::-webkit-input-placeholder {
-  color: #242f54 !important;
-}
-:-moz-placeholder {
-  color: #242f54 !important;
-}
-::-moz-placeholder {
-  color: #242f54 !important;
-}
-:-ms-input-placeholder {
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
   color: #242f54 !important;
 }
 
@@ -33,12 +24,14 @@ input:focus {
 }
 
 .scotland > div {
-  display: inline-block;
-  margin: 4rem 1.5rem;
+  padding: 4rem 1.5rem;
+  background-color: rgba(24, 37, 39, 0.45);
+  background-blend-mode: multiply;
 }
 
 h1 {
-  padding-bottom: .6rem;
+  display: inline-block;
+  padding: 0 1rem .6rem 1rem;
   margin: 0;
   font-weight: 300;
   font-size: 2.0rem;
@@ -54,9 +47,10 @@ h2 {
   letter-spacing: 0.03em;
 }
 
-.register-interest {
-  display: block;
-  border: 3px solid rgba(252, 252, 254, 0.9);
+.register {
+  display: inline-block;
+  background-color: rgba(66, 87, 39, .3);
+  border: 1px solid rgba(252, 252, 254, 0.9);
   border-radius: .5rem;
   margin: 0 1.5rem;
   padding: .7em 1em;
@@ -67,12 +61,13 @@ h2 {
   text-transform: uppercase;
   line-height: 1.5em;
   transition: background .5s;
+  mix-blend-mode: screen;
 }
-.register-interest:link, .register-interest:visited {
+.register:link, .register:visited {
   color: #fdfdfe;
 }
-.register-interest:active, .register-interest:hover, .register-interest:focus {
-  background-color: rgba(31, 54, 106, .2);
+.register:active, .register:hover, .register:focus {
+  background-color: rgba(66, 87, 39, .45);
 }
 
 @media (min-width: 400px) {
@@ -82,8 +77,8 @@ h2 {
 }
 @media (min-width: 500px) {
   .scotland > div {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   h1 {
     font-size: 2.7rem;
@@ -91,14 +86,14 @@ h2 {
   h2 {
     font-size: 1.6rem;
   }
-  .register-interest {
+  .register {
     font-size: 1.2rem;
   }
 }
 @media (min-width: 700px) {
   .scotland > div {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
   h1 {
     font-size: 3rem;
@@ -107,14 +102,14 @@ h2 {
     font-size: 1.8rem;
     margin-bottom: 4.5rem;
   }
-  .register-interest {
+  .register {
     font-size: 1.4rem;
   }
 }
 @media (min-width: 850px) {
   .scotland > div {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
   h1 {
     font-size: 4rem;
@@ -122,27 +117,27 @@ h2 {
 }
 @media (min-width: 1000px) {
   .scotland > div {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
 .about {
-  margin: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .about a {
   border-bottom: 1px solid currentColor;
 }
 .about a:link {
-  color: #2a487c;
+  color: #425727;
 }
 .about a:visited, .about a:active, .about a:hover, .about a:focus {
   color: inherit;
 }
 
 .about h3 {
-  color: #2a487c;
+  color: #425727;
   font-weight: 600;
 }
 
@@ -154,6 +149,10 @@ h2 {
   hyphens: auto;
 }
 
+.about {
+  background: #fdfdfe;
+}
+
 @media (min-width: 500px) {
   .about h3 {
     font-size: 1.5rem;
@@ -163,16 +162,19 @@ h2 {
   }
 }
 @media (min-width: 700px) {
-  .about, .social {
+  .scotland > div, .about, .social {
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin-left: 5%;
     margin-right: 5%;
   }
+  .about {
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  }
 }
 @media (min-width: 900px) {
-  .about {
-    margin-top: 3rem;
-  }
-  .about, .social {
+  .scotland > div, .about, .social {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -207,7 +209,7 @@ input {
 }
 
 .input {
-  border-bottom: 1px solid #2a487c;
+  border-bottom: 1px solid #425727;
   font-weight: lighter;
   line-height: 2em;
   margin: 0.5rem 0;
@@ -215,7 +217,7 @@ input {
 }
 
 .submit {
-  border: 2px solid #2a487c;
+  border: 2px solid #425727;
   border-radius: .2rem;
   font-weight: 600;
   line-height: 2em;
