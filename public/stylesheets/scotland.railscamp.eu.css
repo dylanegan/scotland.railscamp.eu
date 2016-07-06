@@ -6,6 +6,13 @@ body {
 
 a {
   text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+a:link {
+  color: #425727;
+}
+a:visited, a:active, a:hover, a:focus {
+  color: inherit;
 }
 
 input:focus {
@@ -122,35 +129,53 @@ h2 {
   }
 }
 
-.about {
+.supporters, .about {
   padding: 2rem 1.5rem;
 }
 
-.about a {
-  border-bottom: 1px solid currentColor;
+.supporters {
+  padding-top: 1rem;
+  padding-bottom: 1.3rem;
+  text-align: center;
+  background: rgba(255,255,255,0.4);
+  border-bottom: 1px solid #e6eddf;
 }
-.about a:link {
+.supporters h4 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+.supporters ul {
+  margin: 0;
+  padding: 0;
+}
+.supporters li {
+  display: inline-block;
+}
+a:link {
   color: #425727;
 }
-.about a:visited, .about a:active, .about a:hover, .about a:focus {
+a:visited, a:active, a:hover, a:focus {
   color: inherit;
 }
+.supporters li + li:before {
+  display: inline-block;
+  margin: 0 .7rem 0 .4rem;
+  content: '💚';
+}
 
+.about {
+  background: #fdfdfe;
+}
 .about h3 {
   color: #425727;
   font-weight: 600;
 }
-
 .about p {
   line-height: 1.5em;
   text-align: justify;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
-}
-
-.about {
-  background: #fdfdfe;
 }
 
 @media (min-width: 500px) {
@@ -162,7 +187,7 @@ h2 {
   }
 }
 @media (min-width: 700px) {
-  .scotland > div, .about, .social {
+  .scotland > div, .supporters, .about, .social {
     padding-left: 3rem;
     padding-right: 3rem;
     margin-left: 5%;
@@ -174,7 +199,7 @@ h2 {
   }
 }
 @media (min-width: 900px) {
-  .scotland > div, .about, .social {
+  .scotland > div, .supporters, .about, .social {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -251,7 +276,9 @@ input {
   margin: 3em auto 3em;
   width: 90%;
 }
-
+.social a {
+  border: none;
+}
 .social img {
   width: 40px;
   transition: transform .5s ease-out;
@@ -259,7 +286,6 @@ input {
 .social img:hover {
   transform: scale(1.2);
 }
-
 .social .railscamp-yield {
   float: right;
   width: 70px;
