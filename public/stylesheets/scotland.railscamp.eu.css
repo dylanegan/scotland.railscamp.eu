@@ -129,7 +129,7 @@ h2 {
   }
 }
 
-.supporters, .about {
+.supporters, .information {
   padding: 2rem 1.5rem;
 }
 
@@ -164,14 +164,14 @@ a:visited, a:active, a:hover, a:focus {
   content: '💚';
 }
 
-.about {
+.information {
   background: #fdfdfe;
 }
-.about h3 {
+.information h3 {
   color: #425727;
   font-weight: 600;
 }
-.about p {
+.information p {
   line-height: 1.5em;
   text-align: justify;
   -webkit-hyphens: auto;
@@ -180,46 +180,46 @@ a:visited, a:active, a:hover, a:focus {
 }
 
 @media (min-width: 500px) {
-  .about h3 {
+  .information h3 {
     font-size: 1.5rem;
   }
-  .about p {
+  .information p {
     font-size: 1.1rem;
   }
 }
 @media (min-width: 700px) {
-  .scotland > div, .supporters, .about, .social {
+  .scotland > div, .supporters, .information, .social {
     padding-left: 3rem;
     padding-right: 3rem;
     margin-left: 5%;
     margin-right: 5%;
   }
-  .about {
+  .information {
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
   }
 }
 @media (min-width: 900px) {
-  .scotland > div, .supporters, .about, .social {
+  .scotland > div, .supporters, .information, .social {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     max-width: 50rem;
   }
-  .about h3 {
+  .information h3 {
     font-size: 1.7rem;
     font-weight: 400;
   }
-  .about p {
+  .information p {
     font-size: 1.2rem;
     font-weight: 300;
   }
 }
 @media (min-width: 1000px) {
-  .about h3 {
+  .information h3 {
     font-size: 1.8rem;
   }
-  .about p {
+  .information p {
     font-size: 1.3rem;
   }
 }
@@ -291,4 +291,13 @@ input {
   float: right;
   width: 70px;
   margin-top: -.7rem;
+}
+
+.checklist {
+  list-style-type: none;
+}
+
+.checklist li:before {
+  content: "⛺";
+  padding-right: 8px;
 }
