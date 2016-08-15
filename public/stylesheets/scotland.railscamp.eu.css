@@ -295,6 +295,7 @@ input {
 
 .checklist {
   list-style-type: none;
+  padding-left: 20px;
 }
 
 .checklist li:before {
