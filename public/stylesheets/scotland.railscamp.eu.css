@@ -129,27 +129,30 @@ h2 {
   }
 }
 
-.supporters, .information {
+.sponsors, .supporters, .information {
   padding: 2rem 1.5rem;
 }
 
-.supporters {
+.supporters, .sponsors {
   padding-top: 1rem;
   padding-bottom: 1.3rem;
   text-align: center;
   background: rgba(255,255,255,0.4);
   border-bottom: 1px solid #e6eddf;
 }
-.supporters h4 {
+.sponsors {
+  background: rgba(255,255,255,0.7);
+}
+.supporters h4, .sponsors h4 {
   font-size: 1.2em;
   margin-top: 0;
   margin-bottom: .5rem;
 }
-.supporters ul {
+.supporters ul, .sponsors ul {
   margin: 0;
   padding: 0;
 }
-.supporters li {
+.supporters li, .sponsors li {
   display: inline-block;
 }
 a:link {
@@ -162,6 +165,9 @@ a:visited, a:active, a:hover, a:focus {
   display: inline-block;
   margin: 0 .7rem 0 .4rem;
   content: '💚';
+}
+.sponsors a {
+  border: none;
 }
 
 .information {
@@ -188,7 +194,7 @@ a:visited, a:active, a:hover, a:focus {
   }
 }
 @media (min-width: 700px) {
-  .scotland > div, .supporters, .information, .social {
+  .scotland > div, .supporters, .sponsors, .information, .social {
     padding-left: 3rem;
     padding-right: 3rem;
     margin-left: 5%;
@@ -200,7 +206,7 @@ a:visited, a:active, a:hover, a:focus {
   }
 }
 @media (min-width: 900px) {
-  .scotland > div, .supporters, .information, .social {
+  .scotland > div, .supporters, .sponsors, .information, .social {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
