@@ -36,6 +36,10 @@ input:focus {
   background-blend-mode: multiply;
 }
 
+a[rel="home"] {
+  border: none;
+}
+
 h1 {
   display: inline-block;
   padding: 0 1rem .6rem 1rem;
@@ -52,6 +56,10 @@ h2 {
   font-weight: 300;
   font-style: italic;
   letter-spacing: 0.03em;
+}
+
+body.guide h2 {
+  margin-bottom: 0;
 }
 
 .register {
@@ -168,6 +176,16 @@ a:visited, a:active, a:hover, a:focus {
 }
 .sponsors a {
   border: none;
+}
+.sponsors li {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+.sponsors li:first-child {
+  margin-left: 0;
+}
+.sponsors li:last-child {
+  margin-right: 0;
 }
 
 .information {
