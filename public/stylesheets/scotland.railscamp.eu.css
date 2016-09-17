@@ -30,6 +30,10 @@ input:focus {
   text-align: center;
 }
 
+.scotland a:link {
+  color: #fdfdfe;
+}
+
 .scotland > div {
   padding: 4rem 1.5rem;
   background-color: rgba(24, 37, 39, 0.45);
